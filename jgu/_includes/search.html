@@ -1,0 +1,13 @@
+<div class="search-panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="/search" method="get" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                    <meta itemprop="target" content="{{ "/search?q=" | prepend: site.baseurl | prepend: site.url }}">
+                    <input itemprop="query-input" type="search" name="q" class="search-panel__form  js--search-panel-text" placeholder="Begin typing for search">
+                    <p class="search-panel__text">Press enter to see results or esc to cancel.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

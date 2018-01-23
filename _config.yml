@@ -1,0 +1,81 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Julien Guittard
+email: julien@guittard.io
+description: >- # this means to ignore newlines until "baseurl:"
+  Hi, I'm Julien Guittard, welcome to my personal website. I am a web application architect and trainer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+
+markdown: kramdown
+excerpt_separator: "<!-- MORE -->"
+future: true
+show_drafts: true
+paginate: 5
+paginate_path: '/blog/page/:num'
+permalink: '/blog/:title'
+tag_page: '/blog/tags/'
+category_page: '/blog/category/'
+
+plugins:
+  - nokogiri
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-admin
+  - jekyll-paginate
+
+social_links:
+  - title: Follow me on Twitter
+    url: https://twitter.com/julienguittard
+    icon: twitter
+  - title: Clone me on Github
+    url: https://github.com/jguittard
+    icon: github
+  - title: Watch me on Instagram
+    url: https://instagram.com/julienguittard
+    icon: instagram
+
+disqus_short_name: julienguittard
+google_analytics_token :
+
+repository: jguittard/jguittard.github.io
+
+timezone: America/Martinique
+encoding: utf-8
+markdown_ext: "md"
+lang: en
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+exclude:
+  - "bower_components"
+  - "bower.json"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

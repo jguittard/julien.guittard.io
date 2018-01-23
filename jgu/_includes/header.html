@@ -1,0 +1,65 @@
+<header class="header push-down-45" role="banner">
+    <div class="container">
+        <div class="logo pull-left">
+            <a href="/" rel="home">
+                <img src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="JG" width="352" height="140">
+            </a>
+        </div>
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="collapse navbar-collapse" id="top-navbar-collapse">
+                <ul class="navigation" role="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                  {% assign links = site.data.navigation %}
+                  {% for link in links %}
+                    {% assign class = nil %}
+                    {% if page.url contains link.url %}
+                      {% assign class = 'active' %}
+                    {% endif %}
+                    <li role="menuitem" class="{{ class }}">
+                      <a href="{{ link.url | prepend: site.baseurl | prepend: site.url }}" itemprop="url">
+                        <span itemprop="name">{{ link.title }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hidden-xs  hidden-sm">
+          <a href="#" class="search__container  js--toggle-search-mode">
+            <span class="glyphicon  glyphicon-search"></span>
+          </a>
+          <div class="social">
+            <a href="#" class="social__container">
+              <span class="glyphicon  glyphicon-heart"></span>
+            </a>
+            <ul class="social__dropdown">
+              <li>
+                <a href="https://www.facebook.com/julienguittard" target="_blank" class="social__container">
+                  <span class="zocial-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/julienguittard" target="_blank" class="social__container">
+                  <span class="zocial-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" target="_blank" class="social__container">
+                  <span class="zocial-rss"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</header>

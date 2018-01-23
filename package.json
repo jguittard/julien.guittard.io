@@ -1,0 +1,47 @@
+{
+  "name": "jguittard.github.io",
+  "version": "1.0.0",
+  "description": "Julien Guittard personal website source code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jguittard/jguittard.github.io.git"
+  },
+  "author": "Julien Guittard <julien.guittard@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jguittard/jguittard.github.io/issues"
+  },
+  "homepage": "https://github.com/jguittard/jguittard.github.io#readme",
+  "support": {
+    "email": "julien.guittard@me.com",
+    "source": "https://github.com/jguittard/jguittard.github.io",
+    "issues": "https://github.com/jguittard/jguittard.github.io/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.5.0",
+    "grunt-autoprefixer": "~3.0.4",
+    "grunt-build-control": "~0.7.1",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-cssmin": "~2.2.1",
+    "grunt-contrib-htmlmin": "~2.4.0",
+    "grunt-contrib-imagemin": "~2.0.1",
+    "grunt-contrib-uglify": "~3.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-critical": "~0.3.0",
+    "grunt-jekyll": "~0.4.2",
+    "grunt-sass": "~2.0.0",
+    "grunt-svgmin": "~4.0.0",
+    "grunt-uncss": "~0.6.2",
+    "grunt-wiredep": "^3.0.1",
+    "jit-grunt": "~0.10.0",
+    "time-grunt": "~1.4.0",
+    "grunt-exec": "^3.0.0"
+  }
+}

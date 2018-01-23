@@ -1,0 +1,62 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="theme-color" content="#70b49c">
+  <meta name="msapplication-navbutton-color" content="#70b49c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="{{ site.name }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
+  <meta name="msapplication-starturl" content="/">
+
+  <meta name="author" itemprop="author" content="Julien Guittard">
+  <meta name="keywords" itemprop="keywords" content="jekyll, grunt, performance">
+  <meta name="description" itemprop="description" content="Developing sites with Jekyll is really simple but with Grunt you will get ecstasy.">
+
+  <link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="icon" href="{{ "/icons/icon-128.png" | prepend: site.baseurl }}">
+  <link rel="icon" href="{{ "/icons/icon-192.png" | prepend: site.baseurl }}">
+  <link rel="icon" href="{{ "/icons/icon-120.png" | prepend: site.baseurl }}">
+  <link rel="icon" href="{{ "/icons/icon-120.png" | prepend: site.baseurl }}" sizes="120x120">
+  <link rel="icon" href="{{ "/icons/icon-152.png" | prepend: site.baseurl }}" sizes="152x152">
+  <link rel="icon" href="{{ "/icons/icon-167.png" | prepend: site.baseurl }}" sizes="167x167">
+  <link rel="icon" href="{{ "/icons/icon-180.png" | prepend: site.baseurl }}" sizes="180x180">
+
+  <link rel="stylesheet" type="text/css" href="{{ "/styles/main.css" | prepend: site.baseurl }}">
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Fonts -->
+  <script type="text/javascript">
+      WebFontConfig = {
+          google: {
+              families: ['Open+Sans:300,400,700:latin', 'Lato:700,900:latin']
+          }
+      };
+      (function() {
+          var wf = document.createElement('script');
+          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+      })();
+  </script>
+</head>
