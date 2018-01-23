@@ -54,7 +54,8 @@ module.exports = function(grunt) {
           base: [
             '.jekyll',
             '.tmp',
-            '<%= app.src %>'
+            '<%= app.src %>',
+            'bower_components'
           ]
         }
       },

@@ -1,0 +1,12 @@
+- title: Twitter
+  url: https://www.twitter.com/julienguittard
+  icon: twitter
+- title: LinkedIn
+  url: https://www.linkedin.com/in/julienguittard
+  icon: linkedin
+- title: Github
+  url: https://github.com/jguittard
+  icon: github
+- title: RSS
+  url: /feed.xml
+  icon: rss

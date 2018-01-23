@@ -2,7 +2,17 @@
     <div class="container">
         <div class="col-xs-12 col-md-3">
             <div class="widget-about push-down-30">
-
+              <img src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="Logo" width="176" height="70"><br/>
+              <span class="footer__text">{{ site.description }}</span>
+              <br/><br/>
+              <div class="social-icons  widget-social-icons">
+                {% assign socials = site.data.social %}
+                {% for social in socials %}
+                <a href="{{ social.url }}" class="social-icons__container" title="{{ social.title }}">
+                  <span class="zocial-{{ social.icon }}"></span>
+                </a>
+                {% endfor %}
+              </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-3">
