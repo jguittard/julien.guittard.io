@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-avatar"
   gem "jekyll-admin"
   gem "jekyll-paginate"
+  gem "jekyll-algolia", "~> 1.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
