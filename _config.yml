@@ -41,17 +41,6 @@ plugins:
   - jekyll-admin
   - jekyll-paginate
 
-social_links:
-  - title: Follow me on Twitter
-    url: https://twitter.com/julienguittard
-    icon: twitter
-  - title: Clone me on Github
-    url: https://github.com/jguittard
-    icon: github
-  - title: Watch me on Instagram
-    url: https://instagram.com/julienguittard
-    icon: instagram
-
 disqus_short_name: julienguittard
 google_analytics_token :
 
@@ -61,6 +50,10 @@ timezone: America/Martinique
 encoding: utf-8
 markdown_ext: "md"
 lang: en
+
+include:
+  - "favicon.ico"
+  - "manifest.json"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

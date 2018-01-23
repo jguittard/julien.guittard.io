@@ -1,12 +1,12 @@
-- title: Twitter
+- title: Follow me on Twitter
   url: https://www.twitter.com/julienguittard
   icon: twitter
-- title: LinkedIn
+- title: Hire me on LinkedIn
   url: https://www.linkedin.com/in/julienguittard
   icon: linkedin
-- title: Github
+- title: Clone me on Github
   url: https://github.com/jguittard
   icon: github
-- title: RSS
+- title: Read me through RSS
   url: /feed.xml
   icon: rss
