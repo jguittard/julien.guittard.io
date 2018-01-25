@@ -14,13 +14,11 @@
   <meta name="msapplication-starturl" content="/">
 
   <meta name="author" itemprop="author" content="Julien Guittard">
-  <meta name="keywords" itemprop="keywords" content="jekyll, grunt, performance">
-  <meta name="description" itemprop="description" content="Developing sites with Jekyll is really simple but with Grunt you will get ecstasy.">
 
-  <link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!--<link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.baseurl }}">
 
-  <title>{{ page.title }}</title>
+  {% seo %}
 
   <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
   <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
@@ -33,7 +31,6 @@
   <link rel="icon" href="{{ "/icons/icon-180.png" | prepend: site.baseurl }}" sizes="180x180">
 
   <link rel="stylesheet" type="text/css" href="{{ "/styles/main.css" | prepend: site.baseurl }}">
-
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

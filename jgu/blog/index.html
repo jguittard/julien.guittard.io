@@ -20,9 +20,9 @@ title: Blog posts
                   <img src="{{ author.avatar }}" alt="Author avatar" width="30" height="30">
                 </figure>
                 <a href="{{ author.web }}" target="_blank" rel="author" itemprop="url">
-                  <span itemprop="name">{{ author.name }}</span>
+                  <span itemprop="name">{{ author.firstname }}</span>
                 </a> in
-                <a href="#">News</a>
+                <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
               </span>
               <span class="meta__date" role="contentinfo">
                 <span class="glyphicon glyphicon-calendar"></span> &nbsp;
@@ -50,9 +50,9 @@ title: Blog posts
                       <img src="{{ author.avatar }}" alt="Meta avatar" width="30" height="30">
                     </figure>
                     <a href="{{ author.web }}" rel="author" itemprop="url">
-                      <span itemprop="name">{{ author.name }}</span>
+                      <span itemprop="name">{{ author.firstname }}</span>
                     </a> in
-                    <a href="#">News</a>
+                    <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
                   </span>
                   <span class="meta__date">
                     <span class="glyphicon glyphicon-calendar"></span> &nbsp;

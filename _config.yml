@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Julien Guittard
+name: Julien Guittard
 email: julien@guittard.io
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Julien Guittard, welcome to my personal website. I am a web application architect and trainer.
@@ -43,6 +44,21 @@ plugins:
 
 disqus_short_name: julienguittard
 google_analytics_token :
+twitter:
+  username: julienguittard
+facebook:
+  app_id: 147845592583817
+  publisher: https://www.facebook.com/julien.guittard
+  admins: 10209304201783977
+
+social:
+  name: Julien Guittard
+  links:
+    - https://www.facebook.com/julien.guittard
+    - https://www.twitter.com/julienguittard
+    - https://www.linkedin.com/in/julienguittard
+    - https://github.com/jguittard
+    - https://instagram.com/julienguittard
 
 repository: jguittard/jguittard.github.io
 
