@@ -44,12 +44,12 @@ module.exports = function(grunt) {
         port: 9000,
         livereload: 35729,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+        hostname: 'julien.guittard.io'
       },
       livereload: {
         options: {
           open: {
-            target: 'http://localhost:9000/<%= app.baseurl %>'
+            target: 'http://julien.guittard.io:9000/<%= app.baseurl %>'
           },
           base: [
             '.jekyll',

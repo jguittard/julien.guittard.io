@@ -1,11 +1,16 @@
 <header class="header push-down-45" role="banner" itemscope itemtype="http://schema.org/WPHeader">
     <div class="container">
-        <div class="logo pull-left">
-            <a href="/" rel="home">
-                <img src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="JG" width="352" height="140">
+        <div class="logo pull-left" itemprop="publisher" itemscope id="jg-organization" itemtype="https://schema.org/Organization">
+            <a href="/" rel="home" itemprop="url">
+              <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img itemprop="contenturl" src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="JG" width="352" height="140">
+                <meta itemprop="width" content="352">
+                <meta itemprop="height" content="140">
+                <meta itemprop="url" content="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}">
+              </span>
+              <meta itemprop="name" content="Julien Guittard">
             </a>
         </div>
-
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>

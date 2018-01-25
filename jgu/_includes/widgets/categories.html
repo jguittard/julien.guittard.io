@@ -1,0 +1,12 @@
+<!-- Widget categories -->
+<div class="widget-categories push-down-30">
+  <h6>Categories</h6>
+  <ul>
+    {% for category in site.categories %}
+    {% assign cat = category | first %}
+    <li>
+      <a href="{{ cat | prepend: site.category_page }}">{{ site.data.categories[cat].title }} &nbsp;<span class="widget-categories__text">({{ site.categories[cat].size }})</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+</div><!-- end of .widget-categories -->

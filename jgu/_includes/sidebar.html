@@ -1,3 +1,14 @@
-<aside class="col-xs-12 col-md-8" itemscope itemtype="http://schema.org/WPSideBar">
-
+<aside class="col-xs-12 col-md-4" itemscope itemtype="http://schema.org/WPSideBar">
+  {% include widgets/author.html %}
+  <section class="sidebar boxed push-down-30">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        {% include widgets/categories.html %}
+        {% include widgets/featured-post.html %}
+        {% include widgets/posts.html %}
+        {% include widgets/tags.html %}
+        {% include widgets/twitter.html %}
+        {% include widgets/comments.html %}
+    </div>
+  </section>
 </aside>

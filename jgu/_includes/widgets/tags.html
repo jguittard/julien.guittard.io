@@ -1,0 +1,8 @@
+<!-- Widget tags -->
+<div class="widget-tags tags">
+  <h6>Tags</h6>
+  <hr>
+  {% for tag in site.tags %}
+  <a href="{{ tag | first | prepend: site.tag_page }}" class="tags__link" rel="tag">{{ tag | first }}</a>
+  {% endfor %}
+</div><!-- end of .widget-tags -->

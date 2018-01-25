@@ -1,0 +1,14 @@
+{% capture imagePath %}{{ post.created | date: "%Y-%m-%d" }}-{{ post.title | slugify }}/{{ include.name }}{% endcapture %}
+<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+  <meta itemprop="url" content="{{ "/images/posts/" | prepend: site.baseurl | prepend: site.url | append: imagePath }}">
+  <img src="{{ "/images/posts/" | prepend: site.baseurl | prepend: site.url | append: imagePath }}" {% if include.class %} class="{{ include.class }}" {% endif %} {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %} {% if include.height %} height="{{ include.height }}" {% endif %} itemprop="contenturl"/>
+  {% if include.width %}
+  <meta itemprop="width" content="{{ include.width }}">
+  {% endif %}
+  {% if include.height %}
+  <meta itemprop="height" content="{{ include.height }}">
+  {% endif %}
+  {% if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
