@@ -26,7 +26,7 @@
                   {% assign links = site.data.navigation %}
                   {% for link in links %}
                     {% assign class = nil %}
-                    {% if page.url contains link.url %}
+                    {% if page.url == link.url %}
                       {% assign class = 'active' %}
                     {% endif %}
                     <li role="menuitem" class="{{ class }}">

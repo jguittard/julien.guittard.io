@@ -13,12 +13,44 @@
   <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
   <meta name="msapplication-starturl" content="/">
 
-  <meta name="author" itemprop="author" content="Julien Guittard">
-
-  <!--<link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
+  <link rel="canonical" itemprop="url" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.baseurl }}">
 
-  {% seo %}
+  <title>
+    {{ site.title }}
+    {% if page.title %}
+    &nbsp;|&nbsp;{{ page.title }}
+    {% endif %}
+  </title>
+
+  <meta name="author" itemprop="author" content="Julien Guittard">
+  <meta name="description" itemprop="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}">
+
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+  <meta property="og:site_name" content="Julien Guittard">
+  <meta property="article:publisher" content="http://www.facebook.com/julien.guittard" />
+  <meta property="article:author" content="https://www.facebook.com/julien.guittard" />
+  <meta property="article:published_time" content="{{ page.created }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:site" content="@julienguittard" />
+  <meta name="twitter:creator" content="@julienguittard">
+  <meta name="twitter:card" content="summary">
 
   <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
   <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">

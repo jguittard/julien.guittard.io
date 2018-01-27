@@ -20,7 +20,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-sitemap"
   gem "jekyll-seo"
-  gem "jekyll-seo-tag"
   gem "jekyll-avatar"
   gem "jekyll-admin"
   gem "jekyll-paginate"

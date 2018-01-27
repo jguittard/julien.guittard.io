@@ -1,0 +1,10 @@
+web:
+  title: Web
+news:
+  title: News
+devops:
+  title: DevOps
+mobile:
+  title: Mobile
+iot:
+  title: IoT

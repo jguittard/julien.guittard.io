@@ -37,7 +37,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo
-  - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-admin
   - jekyll-paginate
