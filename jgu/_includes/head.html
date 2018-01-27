@@ -24,6 +24,9 @@
   </title>
 
   <meta name="author" itemprop="author" content="Julien Guittard">
+  {% if page.author %}
+  <link rel="author" href="{{ site.data.authors[page.author].google_plus }}?rel=author" />
+  {% endif %}
   <meta name="description" itemprop="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}">
 
   {% if paginator.previous_page %}

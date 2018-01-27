@@ -4,6 +4,8 @@ julien:
   email: julien.guittard@me.com
   web: /about
   avatar: 'https://avatars2.githubusercontent.com/u/5320213?s=90&v=4'
+  twitter_username: julienguittard
+  google_plus: http://google.com/+JulienGuittardWebpage
 
 matthew:
   firstname: Matthew
@@ -11,3 +13,4 @@ matthew:
   email: matthew@mwop.net
   web: https://mwop.net
   avatar: 'https://avatars1.githubusercontent.com/u/25943?s=90&v=4'
+  google_plus: https://plus.google.com/+MatthewWeierOPhinney
