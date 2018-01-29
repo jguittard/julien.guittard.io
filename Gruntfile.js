@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-build-control');
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt);
 
@@ -245,9 +246,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= app.dist %>/<%= app.baseurl %>/images',
+          cwd: '<%= app.src %>/_assets/images',
           src: '**/*.{jpg,jpeg,png,gif}',
-          dest: '<%= app.dist %>/<%= app.baseurl %>/images'
+          dest: '.tmp/<%= app.baseurl %>/images'
         }]
       }
     },
@@ -267,20 +268,6 @@ module.exports = function(grunt) {
           {
             expand: true,
             dot: true,
-            cwd: '<%= app.src %>/_assets',
-            src: ['images/**/*'],
-            dest: '.tmp/<%= app.baseurl %>'
-          },
-          {
-            expand: true,
-            dot: true,
-            cwd: '<%= app.src %>/_assets',
-            src: ['fonts/**/*'],
-            dest: '.tmp/<%= app.baseurl %>'
-          },
-          {
-            expand: true,
-            dot: true,
             cwd: 'bower_components/sass-bootstrap',
             src: ['fonts/**/*'],
             dest: '.tmp/<%= app.baseurl %>'
@@ -289,8 +276,34 @@ module.exports = function(grunt) {
             expand: true,
             dot: true,
             cwd: '<%= app.src %>/_assets',
-            src: ['icons/**/*'],
+            src: [
+              'images/**/*',
+              'fonts/**/*',
+              'icons/**/*'
+            ],
             dest: '.tmp/<%= app.baseurl %>'
+          }
+        ]
+      },
+      dist: {
+        files: [
+          {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/sass-bootstrap',
+            src: ['fonts/**/*'],
+            dest: '<%= app.dist %>/<%= app.baseurl %>'
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= app.src %>/_assets',
+            src: [
+              'images/**/*',
+              'fonts/**/*',
+              'icons/**/*'
+            ],
+            dest: '<%= app.dist %>/<%= app.baseurl %>'
           }
         ]
       }
@@ -299,7 +312,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           dir: '<%= app.dist %>/<%= app.baseurl %>',
-          remote: 'git@github.com:jguittard/jguittard.github.io.git',
+          remote: 'git@github.com:jguittard/julien.guittard.io.git',
           branch: 'gh-pages',
           commit: true,
           push: true,
@@ -320,7 +333,7 @@ module.exports = function(grunt) {
       'sass:server',
       'copy:server',
       'autoprefixer',
-      'uglify',
+      'uglify:server',
       'connect:livereload',
       'watch'
     ]);
@@ -336,13 +349,12 @@ module.exports = function(grunt) {
     'autoprefixer',
     'cssmin',
     'uglify',
-    'critical',
     'htmlmin'
   ]);
 
   grunt.registerTask('deploy', [
     'build',
-    'copy',
+    'copy:dist',
     'buildcontrol'
   ]);
 

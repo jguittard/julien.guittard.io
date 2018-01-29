@@ -4,7 +4,7 @@ layout: default
 {% assign post = page %}
 {% assign author = site.data.authors[post.author] %}
 <article class="boxed push-down-60" itemscope itemtype="http://schema.org/BlogPosting" itemref="jg-organization">
-  <link itemprop="mainEntityOfPage" href="{{ post.url | prepend: site.baseurl | preprend: site.url }}" />
+  <link itemprop="mainEntityOfPage" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" />
   <header class="meta">
     {% if post.poster %}
     {% include image.html class="wp-post-image" name=post.poster alt="Post poster" width=1138 height=493 %}
@@ -17,7 +17,7 @@ layout: default
                 <img src="{{ author.avatar }}" alt="Author avatar" width="30" height="30">
               </figure>
               <a href="{{ author.web }}" target="_blank" rel="author">{{ author.firstname }}</a> in
-              <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
+              <a href="{{ post.category | prepend: site.category_page | replace: ':category', post.category }}">{{ site.data.categories[post.category].title }}</a>
             </span>
             <span class="meta__date" role="contentinfo">
               <span class="glyphicon glyphicon-calendar"></span> &nbsp;
@@ -28,7 +28,7 @@ layout: default
         </div>
         <div class="col-xs-12  col-sm-4">
           <div class="meta__comments">
-            <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
+            <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ layout: default
                   <a href="{{ author.web }}" target="_blank" rel="author" itemprop="url">
                     <span itemprop="name">{{ author.firstname }}</span>
                   </a> in
-                  <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
+                  <a href="{{ site.category_page | replace: ':category', post.category }}">{{ site.data.categories[post.category].title }}</a>
                 </span>
                 <span class="meta__date" role="contentinfo">
                   <span class="glyphicon glyphicon-calendar"></span> &nbsp;
@@ -60,7 +60,7 @@ layout: default
             </div>
             <div class="col-xs-12 col-sm-4">
               <div class="meta__comments">
-                <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
+                <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
               </div>
             </div>
           </div>
@@ -81,15 +81,15 @@ layout: default
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="post-comments">
-            <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+            <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="social-icons">
-            <a href="https://facebook.com/sharer.php?u={{ post.url | preprend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Facebook" class="social-icons__container"><span class="zocial-facebook"></span></a>
-            <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ post.url | preprend: site.baseurl | prepend: site.url }}&via={{ site.twitter.username }}" rel="nofollow" target="
+            <a href="https://facebook.com/sharer.php?u={{ post.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Facebook" class="social-icons__container"><span class="zocial-facebook"></span></a>
+            <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ post.url | prepend: site.baseurl | prepend: site.url }}&via={{ site.twitter.username }}" rel="nofollow" target="
             " title="Share on Twitter" class="social-icons__container"><span class="zocial-twitter"></span></a>
-            <a href="https://plus.google.com/share?url={{ post.url | preprend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Google" class="social-icons__container"><span class="zocial-google"></span></a>
+            <a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Google" class="social-icons__container"><span class="zocial-google"></span></a>
           </div>
         </div>
       </div><!-- end of .row -->
@@ -115,7 +115,7 @@ layout: default
             <meta itemprop="keywords" content="{{ post.tags | join: ', ' }}">
             <hr>
             {% for tag in post.tags %}
-            <a href="{{ tag | prepend: site.tag_page }}" class="tags__link" rel="tag">{{ tag }}</a>
+            <a href="{{ site.tag_page | replace: ':tag', tag }}" class="tags__link" rel="tag">{{ tag }}</a>
             {% endfor %}
           </div><!-- end of .tags -->
         </div>
@@ -132,7 +132,7 @@ layout: default
             var disqus_shortname = '{{ site.disqus_short_name }}';
 
             var disqus_config = function () {
-                this.page.url = '{{ page.url | prepend: site.baseurl | prepend: site.url }}';
+                this.page.url = '{{ page.url | prepend: site.baseurl | prepend: site.url }}';
                 this.page.identifier = '{{ page.title | slugify }}';
                 this.page.title = '{{ page.title }}';
             };

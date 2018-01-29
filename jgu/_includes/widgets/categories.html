@@ -5,7 +5,7 @@
     {% for category in site.categories %}
     {% assign cat = category | first %}
     <li>
-      <a href="{{ cat | prepend: site.category_page }}">{{ site.data.categories[cat].title }} &nbsp;<span class="widget-categories__text">({{ site.categories[cat].size }})</span></a>
+      <a href="{{ site.category_page | replace: ':category', cat }}">{{ site.data.categories[cat].title }} &nbsp;<span class="widget-categories__text">({{ site.categories[cat].size }})</span></a>
     </li>
     {% endfor %}
   </ul>

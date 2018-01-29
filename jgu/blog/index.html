@@ -7,7 +7,7 @@ title: Blog posts
   {% for post in paginator.posts %}
     {% assign author = site.data.authors[post.author] %}
     <article class="boxed push-down-45" itemscope itemtype="http://schema.org/BlogPosting" itemref="jg-organization">
-      <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ "/blog/" | prepend: site.baseurl | prepend: site.url }}" content="">
+      <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ "/blog/" | prepend: site.baseurl | prepend: site.url }}" content="">
       <header class="meta">
       {% if post.poster %}
       {% include image.html class="wp-post-image" name=post.poster alt="Post poster" width=748 height=324 %}
@@ -22,7 +22,7 @@ title: Blog posts
                 <a href="{{ author.web }}" target="_blank" rel="author" itemprop="url">
                   <span itemprop="name">{{ author.firstname }}</span>
                 </a> in
-                <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
+                <a href="{{ site.category_page | replace: ':category', post.category }}">{{ site.data.categories[post.category].title }}</a>
               </span>
               <span class="meta__date" role="contentinfo">
                 <span class="glyphicon glyphicon-calendar"></span> &nbsp;
@@ -33,7 +33,7 @@ title: Blog posts
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="meta__comments">
-              <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
+              <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ title: Blog posts
                     <a href="{{ author.web }}" rel="author" itemprop="url">
                       <span itemprop="name">{{ author.firstname }}</span>
                     </a> in
-                    <a href="{{ post.category | prepend: site.category_page }}">{{ site.data.categories[post.category].title }}</a>
+                    <a href="{{ site.category_page | replace: ':category', post.category }}">{{ site.data.categories[post.category].title }}</a>
                   </span>
                   <span class="meta__date">
                     <span class="glyphicon glyphicon-calendar"></span> &nbsp;
@@ -63,7 +63,7 @@ title: Blog posts
               </div>
               <div class="col-xs-12  col-sm-4">
                 <div class="meta__comments">
-                  <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | preprend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
+                  <span class="glyphicon glyphicon-comment"></span> &nbsp; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ title: Blog posts
               {% elsif page == 1 %}
               <a href="{{ paginator.previous_page_path | replace: '//', '/' }}" class="page-numbers">{{ page }}</a>
               {% else %}
-              <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}" class="page-numbers">{{ page }}</a>
+              <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}" class="page-numbers">{{ page }}</a>
               {% endif %}
             {% endfor %}
           </div>

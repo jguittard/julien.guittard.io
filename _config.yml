@@ -42,6 +42,9 @@ plugins:
   - jekyll-paginate
 
 disqus_short_name: julienguittard
+algolia:
+  application_id: TATKG1J96N
+  index_name: 'dev_blog'
 google_analytics_token :
 twitter:
   username: julienguittard
