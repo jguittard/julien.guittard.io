@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>https://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</loc>
+        <loc>http://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</loc>
     </url>
     
     <url>
-        <loc>https://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</loc>
+        <loc>http://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</loc>
     </url>
     
     <url>
-        <loc>https://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</loc>
+        <loc>http://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</loc>
     </url>
     
     <url>
-        <loc>https://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</loc>
+        <loc>http://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</loc>
     </url>
     
     <url>
-        <loc>https://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</loc>
+        <loc>http://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</loc>
     </url>
     
     <url>
-        <loc>https://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</loc>
+        <loc>http://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</loc>
     </url>
     
 
@@ -32,7 +32,7 @@
     
     
     <url>
-        <loc>https://julien.guittard.io/contact/</loc>
+        <loc>http://julien.guittard.io/contact/</loc>
     </url>
     
     
@@ -40,7 +40,7 @@
     
     
     <url>
-        <loc>https://julien.guittard.io/blog/</loc>
+        <loc>http://julien.guittard.io/blog/</loc>
     </url>
     
     
@@ -48,7 +48,7 @@
     
     
     <url>
-        <loc>https://julien.guittard.io/about-me/</loc>
+        <loc>http://julien.guittard.io/about-me/</loc>
     </url>
     
     
@@ -56,7 +56,7 @@
     
     
     <url>
-        <loc>https://julien.guittard.io/</loc>
+        <loc>http://julien.guittard.io/</loc>
     </url>
     
     
@@ -68,7 +68,7 @@
     
     
     <url>
-        <loc>https://julien.guittard.io/blog/page/2/</loc>
+        <loc>http://julien.guittard.io/blog/page/2/</loc>
     </url>
     
     

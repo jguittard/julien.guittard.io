@@ -1,1 +1,1 @@
-Sitemap: https://julien.guittard.io/sitemap.xml
+Sitemap: http://julien.guittard.io/sitemap.xml

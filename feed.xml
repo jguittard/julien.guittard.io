@@ -3,10 +3,10 @@
   <channel>
     <title>Julien Guittard</title>
     <description>Hi, I'm Julien Guittard, welcome to my personal website. I am a web application architect and trainer.</description>
-    <link>https://julien.guittard.io/</link>
-    <atom:link href="https://julien.guittard.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Jan 2018 09:46:00 -0400</pubDate>
-    <lastBuildDate>Mon, 29 Jan 2018 09:46:00 -0400</lastBuildDate>
+    <link>http://julien.guittard.io/</link>
+    <atom:link href="http://julien.guittard.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 29 Jan 2018 09:59:45 -0400</pubDate>
+    <lastBuildDate>Mon, 29 Jan 2018 09:59:45 -0400</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -127,8 +127,8 @@ supports aliasing.&lt;/p&gt;
 recommend checking the package out!&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Jan 2017 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</guid>
+        <link>http://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/psr-7-request-and-method-utilities.html</guid>
         
         <category>php</category>
         
@@ -953,8 +953,8 @@ to get things working. Hopefully this post will help reduce the amount of time
 others need to make this powerful tool work for them!&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Jun 2016 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</guid>
+        <link>http://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/push-to-deploy-with-aws-codedeploy.html</guid>
         
         <category>aws</category>
         
@@ -1301,8 +1301,8 @@ the discussion above sheds more light on why we’ve finally decided to remove i
 and how we feel the removal will help you improve your code.&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 Apr 2016 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</guid>
+        <link>http://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/on-deprecating-servicelocatoraware.html</guid>
         
         <category>patterns</category>
         
@@ -1597,8 +1597,8 @@ love to help solve that problem through documentation.&lt;/li&gt;
 &lt;p&gt;In the meantime, I’m quite happy with my weekend experiment!&lt;/p&gt;
 </description>
         <pubDate>Sun, 17 Apr 2016 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</guid>
+        <link>http://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/serve-psr-7-middleware-via-react.html</guid>
         
         <category>async</category>
         
@@ -2186,8 +2186,8 @@ it as a guideline for your ow projects:&lt;/p&gt;
 useful!&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</guid>
+        <link>http://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/automating-github-pages-builds-with-mkdocs.html</guid>
         
         <category>automation</category>
         
@@ -2274,8 +2274,8 @@ authentication? Just analyze your need, and boom, ten lines letter, it’s done.
 node.js almost two years ago. And now, today, it’s a reality in PHP.&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 00:00:00 -0400</pubDate>
-        <link>https://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</link>
-        <guid isPermaLink="true">https://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</guid>
+        <link>http://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</link>
+        <guid isPermaLink="true">http://julien.guittard.io/blog/expressive-1-0-in-the-wild.html</guid>
         
         <category>http</category>
         
